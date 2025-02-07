@@ -3,9 +3,6 @@ import unicodedata
 import os
 from collections import Counter
 
-# Cargar la clave de API de OpenAI desde una variable de entorno
-
-
 def normalizar_palabra(palabra):
     """Normaliza una palabra eliminando las tildes."""
     return unicodedata.normalize('NFD', palabra).encode('ascii', 'ignore').decode('utf-8')
