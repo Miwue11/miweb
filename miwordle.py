@@ -1,10 +1,10 @@
-import openai
+
 import unicodedata
 import os
 from collections import Counter
 
 # Cargar la clave de API de OpenAI desde una variable de entorno
-openai.api_key = "aqui introduce tu API de OpenAI"
+
 
 def normalizar_palabra(palabra):
     """Normaliza una palabra eliminando las tildes."""
