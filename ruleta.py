@@ -9,17 +9,15 @@ def ruleta_rusa():
             ruleta=random.choice(cargador)
             if bala<1:
                 print("solo tienes 6 posibilidades, elige entre 1 y 6...")
-                break
+                continue
             if bala>6:
                 print("solo tienes 6 posibilidades, elige entre 1 y 6...")
-                break
+                continue
             if ruleta == bala:
                 print("PERDISTE")
                 break
             else:
                 print("SIGUES VIVO, DE MOMENTO...")
-                    
-                return ruleta_rusa()
         except ValueError:
             print("por favor introduce un numero...")
 
